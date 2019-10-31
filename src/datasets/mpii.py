@@ -16,7 +16,7 @@ class MPII(data.Dataset):
     def __init__(self, opt, split):
         print('==> initializing 2D {} data.'.format(split))
         annot = {}
-        tags = ['imgname', 'part', 'center', 'scale']
+        tags = ['imgname', 'part', 'center', 'action', 'scale']
         f = File('{}/mpii/annot/{}.h5'.format(ref.dataDir, split), 'r')
         for tag in tags:
             annot[tag] = np.asarray(f[tag]).copy()
