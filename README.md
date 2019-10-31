@@ -30,7 +30,7 @@ If you use this code, please consider citing our work.
 ```
 python main.py -arch pred_net
 ```
--Run `Conditional Net`
+- Run `Conditional Net`
 ```
 python main.py -arch cond_net
 ```
